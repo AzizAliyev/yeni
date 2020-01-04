@@ -1,0 +1,361 @@
+.nuv{
+    
+    background: black;
+    padding: 36px;
+    
+    .left{
+        a{
+            color: white;
+            font-size: 30px;
+        }
+    }
+    .right{
+        .a1{
+            color: white;
+            font-size: 15px;
+            margin: 10px 10px;
+            position: relative;
+            &:hover{
+                &::before{
+                    width: 100%;
+                }
+            }
+            &::before{
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            background: red;
+            width: 0;
+            height: 2px;
+            transition: 2s;
+
+            }
+
+        }
+        .a1:nth-child(1){
+            &::before{
+                width: 30%;
+            }
+        }
+        i{
+            color: white;
+        }
+    }
+}
+
+
+.nuv1{
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+    .nuv1{
+        padding: 12px;
+        background: black;
+        display: block;
+        .left{
+            a{
+                color: white;
+                font-size: 17px;
+            }
+            
+        }
+        .right{
+            i{
+                color: white;
+                font-size: 17px;
+            }
+        }
+    }
+    .nuv{
+        display: none;
+    }
+  }
+
+
+  .second{
+      background: black;
+      .word{
+        font-size: 24px;
+        padding: 7rem 0 0 4rem;
+          h2{
+            padding: 38px;
+            font-size: 2rem;
+            color: white;
+          }
+          hr{
+            padding: 32px;
+            background:red;
+            width: 42px;
+            padding: 0;
+            margin: 0;
+          }
+      
+    }
+    .bt1{
+
+        &:hover{
+            z-index: 10;
+            &::before{
+              z-index: -10;
+                width: 100%;
+            }
+        }
+        position: relative;
+        &::before{
+            z-index: 1;
+            transition: .4s linear;
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 100%;
+            top:0 ;
+            left: 0;
+            background: #E9204F;
+
+        }
+    }
+
+      }
+
+
+.About{
+    
+    padding-top: 40px;
+    .text{
+       h4{
+           font-size: 52px;
+       }
+        p{
+            color: red;
+        }
+    }
+    .kub{
+        .box{
+            border: none;
+           
+            padding: 12px;
+            i{
+                padding: 30px;
+            }
+        }
+    }
+}
+.word{
+    padding-top: 20px;
+    .text{
+        text-align: center;
+        h2{
+            font-size: 50px;
+           
+        }
+        p{
+            color: red;
+            font-size: 15px;
+        }
+    }
+}
+  
+
+
+
+.all{
+    display: flex;
+    .box{
+        &:hover{
+            i{
+                visibility: visible;
+            }
+        }
+        overflow: hidden;
+        filter: grayscale(0);
+        position: relative;
+        margin: 12px;
+        text-align: center;
+        width: 32%;
+        &:hover{
+            img{
+                filter: grayscale(0);
+
+                transform: scale(1.2);
+            }
+        }
+       
+        }
+        img{
+            transition: all .3s;
+            width: 100%;
+            filter: grayscale(1);
+        }
+        .box-text{
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+            color: white;
+            i{
+                visibility: hidden;
+            }
+           
+        }
+    }
+
+
+
+    .works{
+        position: relative;
+        padding-top: 40px;
+        .left{
+            h2{
+                font-size: 50px;
+            }
+            h4{
+                font-size: 17px;
+                color: red;
+            }
+        }
+        .right{
+           
+            .a1{
+                text-decoration: none;
+                border-radius: 2px;
+                border: none;
+                z-index: 10;
+                position: relative;
+                font-size: 26px;
+                color: black;
+                padding: 14px;
+                border: 1px solid ;
+                &:hover{
+                    &::before{
+                        width: 100%;
+                    }
+                }
+                &::before{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: 0;
+                    background: red;
+                    z-index: -10;
+                    width: 0;
+                    height: 100%;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+
+    .Mother{
+     
+        display: flex;
+        .box{
+            width: 32%;
+            img{
+                width: 100%;
+                margin: 0 16px;
+            }
+        }
+    }
+
+    .Text{
+        padding-top: 50px;
+        .right-text{
+            position: relative;
+            h4{
+                font-size: 40px;
+                color: black;
+            }
+            p{
+                font-size: 20px;
+                color: red;
+            }
+        }
+        .left-text{
+            h5{
+                font-size: 17px;
+            }
+        }
+    }
+
+    .Kartina{
+        .img-left{
+            position: relative;
+            .overlay{
+                position: absolute;
+                left: 63px;
+                bottom: 21px;
+                content: '';
+                color: #fff;
+                
+            }
+            &:hover{
+                img{
+                    filter: none;
+                }
+            }
+            img{
+                filter: grayscale(1);
+            }
+        }
+        .img-right{
+            position: relative;
+            .overlay{
+                position: absolute;
+                left: 63px;
+                bottom: 2px;
+                content: '';
+                color: #fff;
+                
+            }
+            &:hover{
+                img{
+                    filter: none;
+                }
+            }
+            img{
+                filter: grayscale(1);
+            }
+        }
+    }
+
+    .Father{
+        .col-lg-4{
+            h2{
+                font-weight: bold;
+                font-size: 22px;
+                color: black;
+            }
+            p{
+                font-size: 19px;
+                color: #747474;
+            }
+        }
+    }
+
+
+
+    .Client{
+        .right-photo{
+            h4{
+                color: red;
+                font-size: 17px;
+            }
+            h2{
+                font-size: 35px;
+                font-weight: bold;
+            }
+            p{
+                color: #747474;
+                font-size: 20px;
+            }
+        }
+    }
